@@ -16,7 +16,6 @@ calibration:
   chessboard_size: [9, 6]
   calibration_images_dir: "data/raw/calibration"
   save_file: "data/processed/calibration.yaml"
-  # Example source and destination points for homography (customize these)
   homography_src_points: [[100, 200], [540, 200], [540, 380], [100, 380]]
   homography_dst_points: [[0, 0], [4, 0], [4, 3], [0, 3]]
 
