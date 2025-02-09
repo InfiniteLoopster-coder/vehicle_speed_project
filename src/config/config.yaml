@@ -1,0 +1,36 @@
+camera:
+  id: 0
+  frame_width: 640
+  frame_height: 480
+  frame_rate: 30
+
+detection:
+  model: "yolov3"
+  weights_path: "src/detection/models/yolov3.weights"
+  config_path: "src/detection/models/yolov3.cfg"
+  class_names: "src/detection/models/coco.names"
+  confidence_threshold: 0.5
+  nms_threshold: 0.4
+
+calibration:
+  chessboard_size: [9, 6]
+  calibration_images_dir: "data/raw/calibration"
+  save_file: "data/processed/calibration.yaml"
+  # Example source and destination points for homography (customize these)
+  homography_src_points: [[100, 200], [540, 200], [540, 380], [100, 380]]
+  homography_dst_points: [[0, 0], [4, 0], [4, 3], [0, 3]]
+
+tracking:
+  tracker_type: "CSRT"  # Options: CSRT, KCF, MIL, etc.
+
+speed_estimation:
+  smoothing_window: 5
+  conversion_factor: 3.6  # Convert m/s to km/h
+
+visualization:
+  display: true
+  window_name: "Vehicle Speed Detection"
+
+logging:
+  level: "DEBUG"
+  log_file: "logs/system.log"
