@@ -96,3 +96,33 @@ vehicle_speed_project/
 └── scripts/                    # Utility scripts (e.g., for training models or calibration)
     ├── calibrate_camera.py
     └── run_inference.py
+
+
+Usage
+Running the Main Pipeline
+To start the full vehicle speed detection system (using your default camera or a video stream), run:
+
+python src/main.py
+
+Calibration
+Before running the main pipeline, ensure that your camera is calibrated. Use the provided script:
+
+python scripts/calibrate_camera.py --config src/config/config.yaml
+
+Inference
+To run inference on a video or image file, use:
+
+python scripts/run_inference.py --input path/to/your/video.mp4 --config src/config/config.yaml
+
+
+Experiments and Trial Runs
+The experiments/ folder contains dedicated subfolders for experimenting with:
+
+Calibration Experiments:
+Test various calibration methods, analyze reprojection errors, and refine homography calculations.
+
+Detection Experiments:
+Compare different object detection models and hyperparameter settings using sample images and videos.
+
+Tracking Experiments:
+Evaluate and benchmark various tracking algorithms (e.g., CSRT, KCF, MIL) under different conditions.
