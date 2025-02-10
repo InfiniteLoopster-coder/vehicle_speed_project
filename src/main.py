@@ -8,7 +8,7 @@ from detection.detector import Detector
 from tracking.tracker import TrackerManager
 from speed_estimation.speed_estimator import SpeedEstimator
 from visualization.visualizer import Visualizer
-from logging.logger import get_logger
+from logging_utils.logger import get_logger
 
 def load_config():
     # Load configuration from the YAML file

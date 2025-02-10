@@ -12,6 +12,15 @@ import argparse
 import yaml
 import os
 from src.calibration.calibration import CameraCalibrator
+import sys
+import os
+
+# Determine the current script directory (scripts folder)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Calculate the project root directory (one level up)
+project_root = os.path.join(current_dir, '..')
+# Add the project root to the Python module search path
+sys.path.insert(0, project_root)
 
 def parse_args():
     parser = argparse.ArgumentParser(
