@@ -1,0 +1,6 @@
+2025-02-09 15:00:15,968 - VehicleSpeedDetection - INFO - Starting Vehicle Speed Detection System
+2025-02-09 15:00:15,968 - VehicleSpeedDetection - INFO - Calibration data not found. Running calibration...
+2025-02-09 15:00:15,968 - VehicleSpeedDetection - ERROR - Calibration failed. Exiting.
+2025-02-09 15:01:52,432 - VehicleSpeedDetection - INFO - Starting Vehicle Speed Detection System
+2025-02-09 15:01:52,432 - VehicleSpeedDetection - INFO - Calibration data not found. Running calibration...
+2025-02-09 15:01:52,432 - VehicleSpeedDetection - ERROR - Calibration failed. Exiting.
